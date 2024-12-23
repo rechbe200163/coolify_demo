@@ -21,7 +21,7 @@ COPY . .
 
 # Expose the port the app runs on
 
-RUN npm run dev
+RUN npm run build
 # If you're using yarn:
     # RUN yarn build
     
@@ -30,6 +30,6 @@ EXPOSE 3000
 
 # Start the Next.js app
 
-#CMD ["npm", "start"]
+CMD ["npm", "start"]
 # If you're using yarn:
 # CMD ["yarn", "start"]
